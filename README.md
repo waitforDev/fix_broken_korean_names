@@ -25,6 +25,7 @@ python fix_broken_korean_names.py <디렉토리명>
 1. It checks the names of each file and directory. If there are Korean characters in those names that are broken into consonants and vowels, it restores them to the original Korean characters. In this process, it uses Unicode normalization to combine the separated Korean characters.
 1. It converts the restored Korean strings into CP949 encoding so they are properly displayed on the Windows system.
 1. During the renaming of the files and directories, it removes any characters that can't be used in Windows system and control characters. It also removes periods ('.') at the end of file names.
+
 This script can help solve the issue of name breakage that occurs when Korean files or directories created on a Linux or Unix-based system are transferred to a Windows system.
 
 ### Usage
